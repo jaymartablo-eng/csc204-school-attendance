@@ -1,0 +1,3 @@
+STU001|Juan Dela Cruz|BSCS 2A|Active
+STU002|Maria Santos|BSCS 2A|Active
+STU003|Carlo Reyes|BSCS 2B|Active

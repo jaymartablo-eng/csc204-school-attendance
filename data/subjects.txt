@@ -1,0 +1,2 @@
+CSC204|Python Programming|Prof. Reyes|MWF 10:00-11:00
+ITC102|Data Structures|Prof. Cruz|TTH 13:00-14:30
