@@ -1,0 +1,2 @@
+admin | admin123 | admin
+prof_rey | pass456 | instructorprof_ana | pass789 | instructor
