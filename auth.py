@@ -37,3 +37,25 @@ def create_user(username, password, role="instructor"):
 
     append_record("users.txt", [username, password, role])
     return {"username": username, "role": role}
+
+
+def load_users() -> list[dict[str, str]]:
+    users: list[dict[str, str]] = []
+    try:
+        rows = load_records(USERS_FILE)
+    except Exception:
+        return users
+
+    for row in rows:
+        parts = [part.strip() for part in row.split("|")]
+        if len(parts) == 4 and all(parts):
+            username, salt, pw_hash, role = parts
+            users.append(
+                {
+                    "username": username,
+                    "salt": salt,
+                    "hash": pw_hash,
+                    "role": role,
+                }
+            )
+    return users
